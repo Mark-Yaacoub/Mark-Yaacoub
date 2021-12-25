@@ -1,0 +1,194 @@
+/* <!-- start hedder --> */
+*{
+  background-color: black;
+  margin-top: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important ;
+}
+.header  {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: all .35s ease;
+
+}    
+
+/* .list {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-family: monospace;
+  color: beige;
+} */
+
+
+/* li {
+  display: flex;
+} */
+
+/* ul li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+} */
+
+
+.navbar li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.navbar a {
+  padding: .5em .8em;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-right: 65px;
+}
+
+.navbar a::before,
+.navbar a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.navbar a:hover {
+  color: #F18F01;
+}
+
+.img {
+  border-radius: 50%;
+  width: 300px;
+  position: relative;
+}
+
+.info {
+  color: #F18F01;
+  position: relative;
+}
+
+.info .frist {
+  color: hsl(36, 99%, 47%);
+    font-size: 50px;
+  text-transform: capitalize;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  transition: 2s;
+}
+.info .frist:hover {
+  color: beige;
+  font-size: 60px;
+}
+
+h1{
+  color: #F18F01;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  content: "'";
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+/* .info .my-name {
+  color: #ffffff;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+.info .my-name:hover {
+  color: #F18F01;
+} */
+
+
+.header .info p {
+  margin-top: -33px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.header .social .sm i {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  color: white;
+  font-size: 40px;
+  margin: 20px;
+}
+
+/* span.navbar-toggler{
+  color: white   !important;
+} */
+
+/* .navbar .navbar-collapse {
+  text-align:center;
+  
+
+} */
+/* <!-- start hedder --> */
